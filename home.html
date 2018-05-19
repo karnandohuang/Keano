@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
+    <script src="js/home.js"></script>
 </head>
 <body>
 
-<div class="keano uk-container-expand">
-	<div class="uk-padding-small uk-padding-remove-bottom">
+<div class="keano uk-container-expand" uk-scrollspy="cls:uk-animation-scale-up; delay:70;repeat:true; uk-animation-reverse">
+	<div class="uk-padding-small uk-padding-remove-bottom" >
 		<a href="home.html"><img class="uk-align-center uk-margin-remove-bottom" src="assets/logo-header.png" width="200px" height="200px"></a>
 	</div>
 </div>
@@ -28,15 +29,46 @@
 				</div>
 		</nav>
 	</div>
-	<div><hr class="uk-divider-icon uk-padding-remove-top"></div>
+	<div><hr class="uk-margin-remove uk-padding-remove"></div>
 </div>
 
 <div class="uk-container-expand">
 
-	<div class="" style="height: 10000px">
-			<p class="uk-text-center">This is home page</p>
+	<div class="uk-section uk-padding-remove">
+		<div class="uk-grid-collapse" uk-grid>
+			<div class="uk-padding uk-width-large">
+				<span class="uk-text-left uk-text-lead uk-margin">
+					This is homepage
+				</span>
+				<br>
+				<span>
+					This is homepage
+				</span>
+			</div>
+
+			<div class="uk-width-expand" >
+				<img data-src="assets/bg-1-home.jpg" width="" height="" uk-img>
+			</div>
+		</div>
 	</div>
-		
+
+	<div class="uk-section-secondary uk-padding-remove">
+		<div class="uk-grid-collapse" uk-grid>
+			<div class="uk-width-expand">
+				<img data-src="assets/bg-2-home.jpg" width="1300px" uk-img>
+				
+			</div>
+			<div class="uk-width-xlarge uk-padding uk-text-right"> 
+				<span class="uk-text-lead ">This is Homepage 2</span> 
+				<br>
+				<span>this is Homepage 2</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="uk-container-expand uk-height-max-small">
+	<span class="uk-text-center uk-align-center uk-margin-top">© 2020 by Keano</span>
 </div>
 
 </body>
