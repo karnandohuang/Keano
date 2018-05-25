@@ -2,24 +2,18 @@
 	opacity: 0.8;
 }
 
-.google-maps {
-    position: relative;
-    padding-bottom: 75%; // This is the aspect ratio
-    height: 0;
-    overflow: hidden;
-}
-.google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
+.uk-inline {
+  width: 100%;
 }
 
-
-@media screen and (max-width: 1300px) {
-.logo{
-	visibility: hidden;
-}
-
+@media screen and (max-width: 640px) {
+    .logo .uk-navbar-left{
+    	visibility: hidden;
+    }
+    .uk-flex {
+        flex-direction: column;
+    }
+    html {
+  		font-size: 3.4vw;
+    }
 }

@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="assets/logo-keano-favicon-01.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/uikit.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
 	<div class="uk-navbar-container uk-navbar-sticky" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; animation: uk-animation-slide-top" style="background-color: white">
 		<div class="uk-container">
 			<nav  class="uk-navbar-container" uk-navbar style="background-color: white">
-					<div id="logo" class="logo uk-navbar-left" style="visibility: hidden;">
+					<div class="logo uk-navbar-left" style="visibility: hidden;">
 						<a href="home.html" class="uk-navbar-item uk-logo uk-navbar-left"><img src="assets/logo-header.png" width="100px" height="100px"></a>
 					</div>
 
@@ -42,21 +42,27 @@
 		</div>
 
 		<div class="uk-flex uk-flex-center uk-padding">
-		    <div class="uk-padding-remove">
+		    <div class="uk-padding-remove" uk-toggle="target: #modal-example">
 		    	<img src="assets/product2.png" class="hover" height="400px" width="400px">
 		    </div>
-		    <div class="uk-padding-remove">
-				<img src="assets/product3.png" class="hover" height="400px" width="400px">
+		    <div class="uk-padding-remove" uk-toggle="target: #modal-example">
+					<img src="assets/product3.png" class="hover" height="400px" width="400px">
 		    </div>
-		    <div class="uk-padding-remove">
-		    	<img src="assets/product4.png" class="hover" 	 height="400px" width="400px">
+		    <div class="uk-padding-remove" uk-toggle="target: #modal-example">
+		    	<img src="assets/product4.png" class="hover" height="400px" width="400px">
 		    </div>
 		</div>
-
-
-
-			
 	</div>
+
+	<div id="modal-example" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+    	<img src="assets/product2.png" class="hover" height="400px" width="400px">
+    	<div class="content">
+	    	<h1>Collar</h1>
+	    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptate consectetur, maiores expedita quaerat quasi fugit perferendis, esse maxime. Labore repellat, quidem odit quisquam explicabo ducimus libero alias eos itaque.</p>
+    	</div>
+    </div>
+</div>
 
 
 
@@ -73,7 +79,6 @@
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script src="js/uikit.js"></script>
     <script src="js/uikit-icons.min.js"></script>
-    <script src="js/home.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

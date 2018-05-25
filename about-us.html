@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="assets/logo-keano-favicon-01.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/uikit.css" />
     <script  type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script src="js/uikit.js"></script>
     <script src="js/uikit-icons.min.js"></script>
@@ -19,8 +19,8 @@
 	</div>
 	<div class="uk-navbar-container uk-navbar-sticky" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; animation: uk-animation-slide-top" style="background-color: white">
 		<div class="uk-container">
-			<nav  class="uk-navbar-container" uk-navbar style="background-color: white">
-					<div id="logo" class="logo uk-navbar-left" style="visibility: hidden;">
+			<nav class="uk-navbar-container" uk-navbar style="background-color: white">
+					<div class="logo uk-navbar-left" style="visibility: hidden;">
 						<a href="home.html" class="uk-navbar-item uk-logo uk-navbar-left"><img src="assets/logo-header.png" width="100px" height="100px"></a>
 					</div>
 
@@ -38,10 +38,34 @@
 	</div>
 
 
-	<div class="uk-container-expand">
+	<div class="uk-container-expand uk-flex-column">
 
-		<div class="" style="height: 500px">
-				<p class="uk-text-center">This is about us page</p>
+		<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top uk-flex-auto" style="background-image: url('assets/about-1.jpg');" uk-height-viewport  uk-parallax="bgy: -200">
+	    <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" >
+	        <h1 uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; viewport: 0.5;">Concept</h1>
+	        <p uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	    </div>
+	  </div>
+
+    <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top uk-flex-auto" style="background-image: url('assets/about-2.jpg');" uk-height-viewport>
+    <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+        <h1 uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; viewport: 0.5;">Construction Process</h1>
+        <p uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+		</div>
+
+		<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('assets/about-3.jpg');" uk-height-viewport>
+		    <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+		        <h1 uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; viewport: 0.5;">Material</h1>
+		        <p uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    </div>
+		</div>
+
+		<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('assets/about-4.jpg');" uk-height-viewport>
+		    <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+		        <h1 uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; viewport: 0.5;">Innovation</h1>
+		        <p uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    </div>
 		</div>
 			
 	</div>
