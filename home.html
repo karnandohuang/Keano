@@ -3,41 +3,45 @@
 <head>
 	<title>Keano</title>
 	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="assets/logo-keano-favicon-01.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/uikit.min.css" />
-    <script src="js/uikit.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script  type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/uikit.js"></script>
     <script src="js/uikit-icons.min.js"></script>
-    <script src="js/home.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
-
 	<div class="keano uk-container-expand" uk-scrollspy="cls:uk-animation-scale-up; delay:70;repeat:true; uk-animation-reverse">
 		<div class="uk-padding-small uk-padding-remove-bottom" >
 			<a href="home.html"><img class="uk-align-center uk-margin-remove-bottom" src="assets/logo-header.png" width="200px" height="200px"></a>
 		</div>
 	</div>
-	<div class="uk-navbar-container uk-navbar-sticky" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" style="background-color: white">
+	<div class="uk-navbar-container uk-navbar-sticky" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; animation: uk-animation-slide-top" style="background-color: white">
 		<div class="uk-container">
-			<nav class="uk-navbar-container uk-navbar-sticky" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" style="background-color: white">
-					<div class="uk-navbar-center" >
-						<ul class="uk-navbar-nav">
-							<li class="uk-active"><a href="home.html"><button class="uk-button uk-button-text">Home</button></a></li>
-							<li><a href="product.html"><button class="uk-button uk-button-text">Product</button></a></li>
-							<li><a href="about-us.html"><button class="uk-button uk-button-text">About Us</button></a></li>
-							<li><a href="contact-us.html"><button class="uk-button uk-button-text">Contact Us</button></a></li>
-						</ul>
-					</div>
+			<nav  class="uk-navbar-container" uk-navbar style="background-color: white">
+				<div id="logo" class="logo uk-navbar-left" style="visibility: hidden;">
+					<a href="home.html" class="uk-navbar-item uk-logo uk-navbar-left"><img src="assets/logo-header.png" width="100px" height="100px"></a>
+				</div>
+
+				<div class="uk-navbar-center" >
+					<ul class="uk-navbar-nav ">
+						<li class="uk-active"><a href="home.html"><button class="uk-button uk-button-text">Home</button></a></li>
+						<li><a href="product.html"><button class="uk-button uk-button-text">Product</button></a></li>
+						<li><a href="about-us.html"><button class="uk-button uk-button-text">About Us</button></a></li>
+						<li><a href="contact-us.html"><button class="uk-button uk-button-text">Contact Us</button></a></li>
+					</ul>
+				</div>
 			</nav>
 		</div>
 		<div><hr class="uk-margin-remove uk-padding-remove"></div>
 	</div>
-
 	<div class="uk-container-expand">
-
 		<div class="uk-section uk-padding-remove">
 			<div class="uk-grid-collapse" uk-grid>
-				<div class="uk-padding uk-width-large">
-					<span class="uk-text-left uk-text-lead uk-margin">
+				<div class="uk-padding uk-width-xlarge@m" style="background-color: rgb(250,250,250)">
+					<span class="uk-text-left uk-text-lead uk-margin ">
 						This is homepage
 					</span>
 					<br>
@@ -48,23 +52,20 @@
 					<form class="uk-margin">
 						<button class="uk-button uk-button-default" formaction="about-us.html">learn more</button>
 					</form>
-
 				</div>
-
-				<div class="uk-width-expand" >
-					<img data-src="assets/bg-1-home.jpg" width="" height="" uk-img>
+				<div class="uk-width-expand@m uk-text-right">
+					<img data-src="assets/img3.jpg" width="1500px" uk-img>
 				</div>
 			</div>
 		</div>
-
-		<div class="uk-section-secondary uk-padding-remove">
+		<div class="uk-section uk-section uk-padding-remove">
 			<div class="uk-grid-collapse" uk-grid>
-				<div class="uk-width-expand">
-					<img data-src="assets/bg-2-home.jpg" width="1300px" uk-img>
+				<div class="uk-width-expand@m">
+					<img data-src="assets/img4.jpg" width="1500px" uk-img>
 					
 				</div>
-				<div class="uk-width-xlarge uk-padding uk-text-right"> 
-					<span class="uk-text-lead ">This is Homepage 2</span> 
+				<div class="uk-width-xlarge@m uk-padding uk-text-right" style="background-color: rgb(240,240,240a)" > 
+					<span class="uk-text-lead">This is Homepage 2</span> 
 					<br>
 					<span>this is Homepage 2</span>
 					<br>
@@ -80,7 +81,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="footer uk-container-expand uk-height-max-small uk-align-center uk-text-center uk-margin-remove-top">
 		<hr class="uk-margin-remove uk-padding-remove">
 		<span class="uk-text-center uk-align-center uk-margin-small-bottom uk-text-small">© 2020 by Keano</span>
@@ -90,6 +90,6 @@
 		<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
 		<a href="" class="uk-icon-button" uk-icon="google-plus"></a>
 	</div>
-
+    
 </body>
 </html>

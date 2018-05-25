@@ -3,23 +3,29 @@
 <head>
 	<title>Keano</title>
 	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="assets/logo-keano-favicon-01.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/uikit.min.css" />
-    <script src="js/uikit.min.js"></script>
+    <script  type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/uikit.js"></script>
     <script src="js/uikit-icons.min.js"></script>
 </head>
 <body>
 
 <div class="keano uk-container-expand" uk-scrollspy="cls:uk-animation-scale-up; delay:70;repeat:true; uk-animation-reverse">
-	<div class="uk-padding-small uk-padding-remove-bottom">
+	<div class="uk-padding-small uk-padding-remove-bottom" >
 		<a href="home.html"><img class="uk-align-center uk-margin-remove-bottom" src="assets/logo-header.png" width="200px" height="200px"></a>
 	</div>
 </div>
-<div class="uk-navbar-container uk-navbar-sticky" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" style="background-color: white">
+<div class="uk-navbar-container uk-navbar-sticky" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; animation: uk-animation-slide-top" style="background-color: white">
 	<div class="uk-container">
-		<nav class="uk-navbar-container uk-navbar-sticky" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" style="background-color: white">
+		<nav  class="uk-navbar-container" uk-navbar style="background-color: white">
+				<div id="logo" class="logo uk-navbar-left" style="visibility: hidden;">
+					<a href="home.html" class="uk-navbar-item uk-logo uk-navbar-left"><img src="assets/logo-header.png" width="100px" height="100px"></a>
+				</div>
+
 				<div class="uk-navbar-center" >
-					<ul class="uk-navbar-nav">
+					<ul class="uk-navbar-nav ">
 						<li class="uk-active"><a href="home.html"><button class="uk-button uk-button-text">Home</button></a></li>
 						<li><a href="product.html"><button class="uk-button uk-button-text">Product</button></a></li>
 						<li><a href="about-us.html"><button class="uk-button uk-button-text">About Us</button></a></li>
@@ -31,50 +37,63 @@
 	<div><hr class="uk-margin-remove uk-padding-remove"></div>
 </div>
 
-<div class="uk-container uk-margin-large-top uk-margin-large-bottom" style="margin-left: 20%; margin-right: 20%">
 
-	<div class="uk-card uk-card-body uk-card-large uk-card-default uk-text-center">
-		<h3 class="uk-card-title uk-align-center uk-margin-remove-bottom">Contact Us</h3>
-		<hr class="uk-divider-small uk-margin-small-top  ">
-		
-		<form>
-			
-			<div class="uk-margin">
-				<div class="uk-inline">
-				<span class="uk-form-icon" uk-icon="icon: mail"></span>	
-				<input type="text" name="email" placeholder="*Your email address" class="uk-input uk-form-width-large">
+<div class="uk-cover-container uk-text-center" >
+   <!--  <canvas width="100%" height="200"></canvas> -->
+    <!-- <img src="assets/contact.jpg" alt="" uk-cover> -->
+    <div data-src="assets/contact.jpg"  uk-img class="" style="color:white; height: 225px">
+    	<h3 style="color:white" class="uk-margin-remove-bottom uk-padding-large uk-padding-remove-bottom">Don't Hesitate to Contact Us!</h3>
+    	<span>
+			If you need more information, please fill this form below. Our customer service will gladly help you.</h3>
+    	</span>
+    </div>
+</div>
+
+<div class="uk-container uk-margin-medium-top uk-margin-large-bottom uk-margin-small ">
+
+	<div class="uk-grid ">
+
+    	<div class="uk-card uk-card-default uk-card-body width uk-width-auto uk-margin-medium-right uk-margin-medium-bottom uk-width-1-2" style="height: 550px; width: 600px">
+			<h3 class="uk-card-title uk-text-center uk-margin-remove-bottom">Contact Us</h3>
+			<hr class="uk-divider-small uk-text-center uk-margin-small-top  ">
+			<form>
+				<div class="uk-margin">
+					<div class="uk-inline">
+					<span class="uk-form-icon" uk-icon="icon: mail"></span>	
+					<input type="text" name="email" placeholder="*Your email address" class="uk-input uk-form-width-large">
+					</div>
 				</div>
+				<div class="uk-margin">
+					<div class="uk-inline">
+						<span class="uk-form-icon" uk-icon="icon: user"></span>
+						<input type="text" name="name" placeholder="*Your name" class="uk-input uk-form-width-large">
+					</div>
+				</div>
+				<div class="uk-margin">
+					<div class="uk-inline">
+						<span class="uk-form-icon" uk-icon="icon: phone"></span>
+						<input type="text" name="phone" placeholder="*Your phone number" class="uk-input uk-form-width-large">
+					</div>
+				</div>	
+				<div class="uk-margin">
+					<textarea class="uk-form-width-large uk-textarea" placeholder="*how may we help you?"></textarea>
+				</div>		
+				<button class="uk-button uk-button-default uk-align-center ">Submit</button>
+			</form>
+			<hr class="uk-divider-small uk-text-center">
+			<div class="uk-text-center">
+				<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+				<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+				<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+				<a href="" class="uk-icon-button" uk-icon="google-plus"></a>
 			</div>
+    	</div>
 
-			<div class="uk-margin">
-				<div class="uk-inline">
-					<span class="uk-form-icon" uk-icon="icon: user"></span>
-					<input type="text" name="name" placeholder="*Your name" class="uk-input uk-form-width-large">
-				</div>
-			</div>
-
-			<div class="uk-margin">
-				<div class="uk-inline">
-					<span class="uk-form-icon" uk-icon="icon: phone"></span>
-					<input type="text" name="phone" placeholder="*Your phone number" class="uk-input uk-form-width-large">
-				</div>
-			</div>	
-
-			<div class="uk-margin">
-				<textarea class="uk-form-width-large uk-textarea" placeholder="*how may we help you?"></textarea>
-			</div>		
-
-			<button class="uk-button uk-button-default uk-align-center ">Submit</button>
-
-		</form>
-
-		<hr class="uk-divider-small">
-
-		<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
-		<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
-		<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
-		<a href="" class="uk-icon-button" uk-icon="google-plus"></a>
-
+		<div class="uk-card uk-card-default uk-card-body width uk-width-1-2 uk-text-center uk-width-1-2" style="height: 550px; width: 600px">
+			<h3 class="uk-card-title uk-text-center uk-margin-remove-bottom">Find Us</h3>
+			<hr class="uk-divider-small uk-text-center uk-margin-small-top  ">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.309957788078!2d106.657754!3d-6.220475337329938!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fbe0345c4c65%3A0xfbaf475ba0a7978d!2sBinus+University+-+Alam+Sutera!5e0!3m2!1sen!2sus!4v1527222824485" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
 
 	</div>
 		
